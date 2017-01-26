@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Meme Maker</string>
+    <string name="problem_getting_image">There was a problem getting the image</string>
+    <string name="action_bar_button_share">Share</string>
+    <string name="action_bar_button_save">Save</string>
+    <string name="action_bar_button_cancel">Cancel</string>
+</resources>

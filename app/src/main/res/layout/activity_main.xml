@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hamonteroa.mememaker.MainActivity">
+
+    <ImageView
+        android:id="@+id/meme_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+
+        android:background="@android:color/black" />
+
+    <EditText
+        android:id="@+id/top_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+
+        android:hint="TOP"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/transparent"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/bottom_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+
+        android:hint="BOTTOM"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="@android:color/transparent"
+        android:textSize="40sp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/picture_source_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <android.support.v4.widget.Space
+            android:id="@+id/nr1_space_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/camera_imageButton_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <android.support.v4.widget.Space
+            android:id="@+id/nr2_space_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/gallery_imageButton_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <android.support.v4.widget.Space
+            android:id="@+id/nr3_space_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>
